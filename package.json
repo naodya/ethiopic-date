@@ -1,0 +1,28 @@
+{
+  "name": "ethiopic-date",
+  "version": "1.0.0",
+  "description": "Converts Gregorian date to Ethiopian date.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naody/ethiopic-date.git"
+  },
+  "keywords": [
+    "Calendar",
+    "Ethiopic",
+    "Ethiopian",
+    "Date",
+    "Converter"
+  ],
+  "author": "Naod Yeheyes <naodya@gmail.com> (http://naodya.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naody/ethiopic-date/issues"
+  },
+  "homepage": "https://github.com/naody/ethiopic-date/issues#readme",
+  "dependencies": {
+  }
+}
