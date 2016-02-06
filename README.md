@@ -6,7 +6,7 @@ To Ethiopian calendar converter module.
 
 Download package from NPM.
 ```
-npm install --save 'ethiopic-date'
+npm install --save ethiopic-date
 ```
 
 Import module
