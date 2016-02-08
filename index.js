@@ -27,14 +27,12 @@ function EtCalendar() {
 
     // UTC timestamp minutes.
     var timeStampMinute = gdate.utc().format('X')*1000
-
-
     var days = parseInt((timeStampMinute/calendar.daymillisecond) + calendar.offset);
     var check = 0;
     // Ethiopian calendary year equivalent of the beginng year 1753.
     var eyear = 1745;
 
-    // Check leap year.
+    // Calculate leap year.
     while (check == 0){
       if (eyear % 4 == 3)	{
         if (days >= 366) {
@@ -68,7 +66,7 @@ function EtCalendar() {
       'minute': eminute,
       'second': esecond,
       'period': eperiod,
-      'addistime': moment().format(),
+      'currentaddistime': moment().format(),
       'originaldate': originalDate.format()
     }
 
