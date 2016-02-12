@@ -91,14 +91,33 @@ function EtCalendar() {
 
     var converted =  convertDate(moment(moment().format()));
 
-    var result = calendar.day(converted.dayname) + ', ';
+    var result = calendar.day(converted.dayname) + ' ';
     result += calendar.month(converted.month) + ' ';
-    result += converted.day + ', ';
+    result += converted.day + '፣ ';
     result += converted.year + ' ';
     result += converted.hour + ':';
     result += converted.minute + ':';
     result += converted.second + ' ';
     result += calendar.dayperiod(converted.period);
+
+    return result;
+
+  };
+
+  calendar.convert = function(gcdate) {
+
+    var gcdate = new Date(gcdate).toISOString();
+
+    var converted =  convertDate(moment(gcdate));
+
+    var result = calendar.day(converted.dayname) + ' ';
+    result += calendar.month(converted.month) + ' ';
+    result += converted.day + '፣ ';
+    result += converted.year + ' ';
+    // result += converted.hour + ':';
+    // result += converted.minute + ':';
+    // result += converted.second + ' ';
+    // result += calendar.dayperiod(converted.period);
 
     return result;
 
