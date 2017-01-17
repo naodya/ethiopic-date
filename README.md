@@ -13,7 +13,7 @@ Import module
 ``` JavaScript
 var etdate = require('ethiopic-date');
 console.log(etdate.now());
-console.log(etdate.convertDate('04/10/1980'));
+console.log(etdate.convert('04/10/1980'));
 ```
 Output
 ```
